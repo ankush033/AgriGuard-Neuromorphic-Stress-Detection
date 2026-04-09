@@ -79,3 +79,40 @@ graph TD
         H --> I[Gemini Pro API]
         I --> J[Actionable Strategy]
     end
+
+    🚀 The Smart-Field Roadmap
+Phase 1: Nano-Edge Deployment (Short Term)
+Quantizing models for NVIDIA Jetson and Raspberry Pi deployment.
+
+Implementing offline-first inference for remote farm areas without stable internet.
+
+Phase 2: Multi-Spectral Swarm Integration (Mid Term)
+Enabling Drone-based input streams for large-scale field mapping.
+
+Using NDVI (Normalized Difference Vegetation Index) data to boost SNN accuracy.
+
+Phase 3: Autonomous Agricultural Ecosystem (Long Term)
+Closed-loop integration with automated irrigation and fertilization systems.
+
+Predictive yield estimation using multi-year temporal spike analysis.
+
+📂 Repository Blueprint
+app.py: The central hub and user dashboard.
+
+train_snn.py: The Neuromorphic training pipeline.
+
+train_cnn.py: The Computer Vision training pipeline.
+
+src/: Modular code for spike encoding and data augmentation.
+
+models/: Serialized weights of trained neural networks.
+
+.env: Encrypted storage for API credentials (ignored by Git).
+
+⚠️ Disclaimer
+AgriGuard is a research-based diagnostic tool. AI recommendations should be cross-verified with local agricultural experts before large-scale pesticide or chemical application.
+
+👨‍💻 Developer & Visionary
+Lead Architect: Ankush
+
+Inspiration: Sustainable Precision Farming through Bio-Inspired Computing.
