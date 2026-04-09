@@ -1,0 +1,38 @@
+# ==========================================
+# 🛑 AGRI-GUARD DATA & MODEL LOCK
+# ==========================================
+
+# 1. Secret Key (Privacy)
+.env
+
+# 2. Main Data Folders (Pure folders ignore)
+data/
+images_split/
+cleaned_data/
+
+# 3. All Data-Related Files (Anywhere in the directory)
+# Isse sari CSV, Excel aur Zip files block ho jayengi
+*.csv
+*.xlsx
+*.zip
+*.tar.gz
+*.rar
+
+# 4. Machine Learning Models (Heavy Weights)
+# Inhe GitHub pe nahi, README mein link dena chahiye
+*.h5
+*.pth
+*.pkl
+*.pb
+*.onnx
+
+# 5. Environment & Logs (Faltu files)
+__pycache__/
+.vscode/
+.venv/
+venv/
+*.log
+
+# 6. System Trash
+.DS_Store
+Thumbs.db
