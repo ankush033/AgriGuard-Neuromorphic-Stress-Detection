@@ -11,7 +11,7 @@
 
 ## 👁️ The Vision: From Reactive to Proactive
 
-In modern agriculture, **late detection** is a silent killer. AgriGuard is built on the philosophy of **early bio-feedback**. By treating environmental fluctuations as neural spikes and leaf textures as spatial matrices, the system detects stress at the **pre-symptomatic stage**.
+In modern agriculture, **late detection** is a silent killer. AgriGuard is built on the philosophy of **early bio-feedback**. By treating environmental fluctuations as neural spikes and leaf textures as spatial matrices, the system detects stress at the pre-symptomatic stage.
 
 ---
 
@@ -122,8 +122,8 @@ AgriGuard/
 ## ⚙️ Installation
 
 ```bash
-git clone https://github.com/your-username/AgriGuard.git
-cd AgriGuard
+git clone https://github.com/ankush033/AgriGuard-Neuromorphic-Stress-Detection.git
+cd AgriGuard-Neuromorphic-Stress-Detection
 pip install -r requirements.txt
 ```
 
@@ -133,32 +133,6 @@ pip install -r requirements.txt
 
 ```bash
 python app.py
-```
-
----
-
-## ☁️ Streamlit Deployment
-
-If Streamlit Cloud cannot detect your GitHub repository, use these commands:
-
-```bash
-git remote -v
-```
-
-If no remote is configured:
-
-```bash
-git remote add origin https://github.com/your-username/AgriGuard.git
-git branch -M main
-git push -u origin main
-```
-
-If the wrong remote is configured:
-
-```bash
-git remote remove origin
-git remote add origin https://github.com/your-username/AgriGuard.git
-git push -u origin main
 ```
 
 ---
