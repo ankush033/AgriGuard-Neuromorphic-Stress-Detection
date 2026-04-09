@@ -26,6 +26,7 @@ The membrane potential is governed by:
 ```
 
 ### Why this matters
+
 1. **Sparsity:** Data is processed only when a spike occurs  
 2. **Efficiency:** Lower power consumption on edge devices  
 3. **Temporal Awareness:** Captures changing environmental conditions over time  
@@ -95,32 +96,25 @@ graph TD
 
 ## 📂 Repository Structure
 
-```bash
+```text
 AgriGuard/
-│── app.py
-│── train_snn.py
-│── requirements.txt
-│── README.md
-│── .env
+├── 📄 app.py                           # Streamlit Dashboard (Main Entry)
+├── 🧠 train_snn.py                     # Neuromorphic SNN Training Pipeline
+├── 👁️ leaf_stress_model_final.h5       # Pre-trained CNN Weights
+├── 🧬 snn_model.pth                    # Trained Spiking Neural Network Weights
+├── 🛠️ clean_data.py                    # Data Cleaning & Feature Engineering
 │
-├── src/
-│   ├── cnn_encoder.py
-│   ├── spike_encoder.py
-│   ├── data_loader.py
-│   ├── preprocessing.py
-│   └── advisory_engine.py
+├── 📂 data/                            # Data Management Core
+│   ├── 📂 environmental/               # Raw & Processed Sensor Logs (.csv)
+│   └── 📂 images/                      # Leaf Dataset (Train/Test/Val)
 │
-├── models/
-│   ├── cnn_model.h5
-│   ├── snn_model.pkl
-│   └── scaler.pkl
+├── 📂 src/                             # Core Processing Logic
+│   └── 📂 preprocessing/               # Image Splitting & CSV Processing
 │
-├── dataset/
-│   ├── images/
-│   └── sensor_data.csv
-│
-└── notebooks/
-    └── experimentation.ipynb
+├── 📂 models/                          # Model Artifacts Storage
+├── 📄 requirements.txt                 # Project Dependencies
+├── 📄 .env                             # Secure API Configuration (Gemini Pro)
+└── 📄 README.md                        # Project Documentation
 ```
 
 ---
@@ -143,6 +137,32 @@ python app.py
 
 ---
 
+## ☁️ Streamlit Deployment
+
+If Streamlit Cloud cannot detect your GitHub repository, use these commands:
+
+```bash
+git remote -v
+```
+
+If no remote is configured:
+
+```bash
+git remote add origin https://github.com/your-username/AgriGuard.git
+git branch -M main
+git push -u origin main
+```
+
+If the wrong remote is configured:
+
+```bash
+git remote remove origin
+git remote add origin https://github.com/your-username/AgriGuard.git
+git push -u origin main
+```
+
+---
+
 ## 🛠️ Tech Stack
 
 - Python
@@ -153,7 +173,20 @@ python app.py
 - OpenCV
 - NumPy
 - Pandas
-- Streamlit or Flask
+- Streamlit
+- Flask
+
+---
+
+## 🎯 Key Features
+
+- Early stress detection before visible symptoms
+- CNN-based leaf disease classification
+- SNN-based environmental anomaly detection
+- Fusion of image and sensor data
+- AI-generated advisory system using Gemini Pro
+- Edge-device friendly design
+- Ready for drone and multispectral integration
 
 ---
 
